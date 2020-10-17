@@ -8,10 +8,11 @@ get_header();
 
 <!-- section hero -->
 <section class="hero">
+    <div class="curve"></div>
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
-                <h1>
+            <div class="col-md-6 animate__animated animate__fadeInLeft">
+                <h1 class="animate__animated animate__jackInTheBox animate__delay-1s">
                     ASESORÍA GRATUITA EN ISAPRES
                 </h1>
                 <h3>Cotiza al instante la mejor opción para ti y tu familia.</h3>
@@ -24,8 +25,8 @@ get_header();
                     <a href="tel:56949564333"><i class="fa fa-whatsapp" aria-hidden="true"></i> +56 9 4956
                         4333 </a></span>
             </div>
-            <div class="col-md-6 bg-form p-4 text-light rounded shadow">
-                <h2 class="text-light text-center">Cotiza gratis y al instante</h2>
+            <div class="col-md-6 bg-form p-4 text-light rounded shadow animate__animated animate__fadeInRight">
+                <h2 class="text-light text-center p-0">Cotiza gratis y al instante</h2>
                 <?php echo do_shortcode( '[super_form id="12"]' ); ?>
             </div>
         </div>
@@ -48,13 +49,13 @@ get_header();
         <h2 class="text-center">¿QUE PLANES PUEDO ELEGUIR?</h2>
         <div class="row">
             <div class="col-md-6">
-                <div class="box">
+                <div class="box"  data-aos="fade-right">
                     <h3>¿Qué es un plan preferente?</h3>
                     <p>Escoge el plan con tu clínica preferida y disfruta la comodidad de elegir
                         dónde atenderte con una mayor cobertura.</p>
                 </div>
 
-                <div class="box">
+                <div class="box"  data-aos="fade-right">
                     <h3>¿Qué es un plan de libre elección?</h3>
                     <p>Tú y tu familia eligen donde atenderse con coberturas hasta 90% en atenciones
                         ambulatorias y hasta 100% en hospitalarias.</p>
@@ -63,14 +64,14 @@ get_header();
             </div>
 
             <div class="col-md-6">
-                <div class="box2">
+                <div class="box2 " data-aos="fade-left">
                     <h3>¿Qué es un plan cerrado?</h3>
                     <p>Es cuando uno de los cotizantes aporte una parte o el total de su 7% a otra persona y pueden unir
                         sus rentas
                         en una cotización común para acceder a mejores beneficios.</p>
                 </div>
 
-                <div class="box2">
+                <div class="box2" data-aos="fade-left">
                     <h3>¿Qué es un plan compensado?</h3>
                     <p>Es cuando uno de los cotizantes aporte una parte o el total de su 7% a otra persona y pueden unir
                         sus
@@ -82,7 +83,7 @@ get_header();
 </section>
 
 <!-- Beneficios de las isapres -->
-<section class="beneficios">
+<section class="beneficios" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
     <div class="container">
         <h2 class="text-center">BENEFICIOS DE LAS ISAPRES</h2>
         <div class="row">
@@ -139,7 +140,7 @@ get_header();
             se paga un porcentaje fijo establecido.</p>
 
 <!-- Inicio de acordeon -->
-        <div id="accordion">
+        <div id="accordion" class="acordeon">
             <div class="card">
                 <div class="card-header" id="headingOne">
                     <h5 class="mb-0">
