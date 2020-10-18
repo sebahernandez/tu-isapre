@@ -1,4 +1,9 @@
 /* Variables CSS */
+
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0px;
     padding: 0px;
@@ -8,10 +13,13 @@ body {
     --bg-color-section: linear-gradient(-20deg, #00cdac 0%, #18d6ca 100%);
     --color-white: #fff;
     --size-title: 4rem;
-    --hover-links: #18d6ca;
+    --hover-links: #00ec98;
     --titulos-h2: #002a51;
-    --bg-box: #febf0f;
-    --bg-box2: radial-gradient(circle at 25.82% 116.45%, #4b7cf4 0, #3c78f2 50%, #2774f0 100%);
+    --bg-box: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+    --bg-box2:linear-gradient(90deg, #08AEEA 0%, #00d4c0 100%);
+    
+    
+    
     --bg-footer: #1068fe;
     --bg-hero: #1068fe;
 }
@@ -51,14 +59,20 @@ h3 {
 }
 
 
+/* gratis */
+.gratis {
+    background-color: #01b564;
+    background-image: linear-gradient(315deg, #0062eb 0%, #3eadcf 74%);
+    padding: 0px 20px;
+}
+
 /* Hero image */
 
 .hero {
 
-    padding: 200px 0px;
+    padding: 100px 0px;
     position: relative;
-    background: var(--bg-hero);
-
+    background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
 }
 
 .hero a {
@@ -75,7 +89,7 @@ h3 {
 .curve {
     background: url('../img/curve.png');
     position: absolute;
-    bottom: 0;
+    bottom: -41px;
     width: 100%;
     height: 200px;
     z-index: 1;
@@ -96,30 +110,64 @@ h3 {
 
 }
 
-/* Formulario */
+/* Formulario Contact form 7*/
 
-.bg-form {
-    background-color: #febf0f !important;
+div#wpcf7-f39-o1 {
+    background-color: #08AEEA;
+background-image: linear-gradient(90deg, #08AEEA 0%, #00d4c0 100%);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
-input.super-shortcode-field {
-    border: none !important;
-    padding: 21px 0px !important;
-
-
+.wpcf7 input[type=submit] {
+    border-bottom: 7px solid #ce5632;
 }
 
-.super-label {
-    color: #fff !important;
-    font-size: 1.2rem !important;
+.wpcf7 input:hover[type=submit] {
+    color: #fff;
+    background-color: #90ce00;
+    border-color: #fff;
 }
 
-.super-checkbox label:before {
-    border-color: #ffffff !important;
+.wpcf7 input[type=submit] {
+    z-index: 99;
+    height: 75px;
+    padding: 20px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    transition: .3s;
+    width: 100%;
+    font-weight: 700;
+    overflow: hidden;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #fb521f;
+    border-bottom: 7px solid #da4500;
 }
 
-.super-first-responsiveness .super-button-medium.super-type-flat .super-button-wrap {
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
+input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required {
+    width: 100%;
+    border: none;
+    padding: 14px 0px;
+    box-sizing: border-box;
+    border-radius: 42px;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+    background: rgb(233, 233, 233);
+}
+
+input {
+    text-indent: 20px;
+}
+
+input::placeholder {
+    padding: 5px;
 }
 
 /* Clinicas */
@@ -215,8 +263,8 @@ input.super-shortcode-field {
 
 /* Lista de beneficios */
 .beneficios {
-    padding: 100px 0px;
-    background-color: #ecf6fb;
+    padding: 200px 0px;
+    background-color: #f9f8f8;
 }
 
 .lista-beneficios {
@@ -295,4 +343,36 @@ footer a:hover {
 .btn-link:hover {
     color: var(--hover-links);
     text-decoration: none;
+}
+
+
+/* Recapcha */
+.rc-anchor-normal {
+    height: 74px;
+    width: 89% !important;
+}
+
+/* Responsive */
+
+@media (max-width:480px) {
+    .hero {
+        padding-top: 40px;
+        padding-bottom: 200px;
+    }
+
+    .hero h1 {
+        font-size: 13vw;
+    }
+
+    .hero h3 {
+        font-size: 5vw;
+    }
+
+    .hero a {
+        font-size: 4vw;
+    }
+
+    h2{
+        font-size: 6vw;
+    }
 }

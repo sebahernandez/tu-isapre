@@ -7,13 +7,13 @@ get_header();
 ?>
 
 <!-- section hero -->
-<section class="hero">
+<section class="hero" id="inicio">
     <div class="curve"></div>
     <div class="container">
         <div class="row">
-            <div class="col-md-6 animate__animated animate__fadeInLeft">
+            <div class="col-md-6 col-sm-12 col-xs-12 animate__animated animate__fadeInLeft">
                 <h1 class="animate__animated animate__jackInTheBox animate__delay-1s">
-                    ASESORÍA GRATUITA EN ISAPRES
+                    ASESORÍA <span class="gratis">GRATUITA</span>  EN ISAPRES
                 </h1>
                 <h3>Cotiza al instante la mejor opción para ti y tu familia.</h3>
                 <p>Comparamos los diferentes planes y te ayudamos a obtener el
@@ -25,9 +25,8 @@ get_header();
                     <a href="tel:56949564333"><i class="fa fa-whatsapp" aria-hidden="true"></i> +56 9 4956
                         4333 </a></span>
             </div>
-            <div class="col-md-6 bg-form p-4 text-light rounded shadow animate__animated animate__fadeInRight">
-                <h2 class="text-light text-center p-0">Cotiza gratis y al instante</h2>
-                <?php echo do_shortcode( '[super_form id="12"]' ); ?>
+            <div class="col-md-6 col-sm-12 col-xs-12 p-4 text-light animate__animated animate__fadeInRight">
+                <?php echo do_shortcode( '[contact-form-7 id="39" title="Formulario Cotización"]' ); ?>
             </div>
         </div>
     </div>
@@ -35,7 +34,7 @@ get_header();
 <!-- section hero // -->
 
 <!-- Carousel -->
-<section class="clinicas" id="clinicas">
+<section class="clinicas">
     <div class="container">
         <h2 class="text-center">Clinicas y centros médicos</h2>
         <div class="py-5"> <?php echo do_shortcode('[sp_wpcarousel id="37"]'); ?></div>
@@ -44,18 +43,19 @@ get_header();
 </section>
 <!-- Carousel -->
 
+<!-- Secciones cajas planes eleccion -->
 <section class="planes" id="planes">
+<h2 class="text-center">¿QUE PLANES PUEDO ELEGUIR?</h2>
     <div class="container">
-        <h2 class="text-center">¿QUE PLANES PUEDO ELEGUIR?</h2>
         <div class="row">
-            <div class="col-md-6">
-                <div class="box"  data-aos="fade-right">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="box" data-aos="zoom-in">
                     <h3>¿Qué es un plan preferente?</h3>
                     <p>Escoge el plan con tu clínica preferida y disfruta la comodidad de elegir
                         dónde atenderte con una mayor cobertura.</p>
                 </div>
 
-                <div class="box"  data-aos="fade-right">
+                <div class="box" data-aos="zoom-in">
                     <h3>¿Qué es un plan de libre elección?</h3>
                     <p>Tú y tu familia eligen donde atenderse con coberturas hasta 90% en atenciones
                         ambulatorias y hasta 100% en hospitalarias.</p>
@@ -63,15 +63,15 @@ get_header();
 
             </div>
 
-            <div class="col-md-6">
-                <div class="box2 " data-aos="fade-left">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="box2" data-aos="zoom-in">
                     <h3>¿Qué es un plan cerrado?</h3>
                     <p>Es cuando uno de los cotizantes aporte una parte o el total de su 7% a otra persona y pueden unir
                         sus rentas
                         en una cotización común para acceder a mejores beneficios.</p>
                 </div>
 
-                <div class="box2" data-aos="fade-left">
+                <div class="box2" data-aos="zoom-in">
                     <h3>¿Qué es un plan compensado?</h3>
                     <p>Es cuando uno de los cotizantes aporte una parte o el total de su 7% a otra persona y pueden unir
                         sus
@@ -83,26 +83,26 @@ get_header();
 </section>
 
 <!-- Beneficios de las isapres -->
-<section class="beneficios" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
+<section class="beneficios" id="beneficios" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
     <div class="container">
         <h2 class="text-center">BENEFICIOS DE LAS ISAPRES</h2>
         <div class="row">
             <div class="col-md-6">
                 <ul class="my-5 lista-beneficios">
                     <li>
-                        <div><img src="<?php echo get_template_directory_uri(); ?> /img/icons/seguro.png" />
+                        <div data-aos="zoom-in"><img src="<?php echo get_template_directory_uri(); ?> /img/icons/seguro.png" />
                         </div> <span> Seguros (Complementarios).</span>
                     </li>
                     <li>
-                        <div><img src="<?php echo get_template_directory_uri(); ?> /img/icons/dinero.png" />
+                        <div data-aos="zoom-in"><img src="<?php echo get_template_directory_uri(); ?> /img/icons/dinero.png" />
                         </div> <span> Cesantía (Pago de cotizaciones que paga la Isapre).</span>
                     </li>
                     <li>
-                        <div><img src="<?php echo get_template_directory_uri(); ?> /img/icons/fuego.png" />
+                        <div data-aos="zoom-in"><img src="<?php echo get_template_directory_uri(); ?> /img/icons/fuego.png" />
                         </div> <span> Catastrófico libre elección.</span>
                     </li>
                     <li>
-                        <div><img src="<?php echo get_template_directory_uri(); ?> /img/icons/seguro-de-viaje.png" />
+                        <div data-aos="zoom-in"><img src="<?php echo get_template_directory_uri(); ?> /img/icons/seguro-de-viaje.png" />
                         </div> <span> Asistencia en viaje (cobertura adicional en el extranjero).</span>
                     </li>
                 </ul>
@@ -110,19 +110,19 @@ get_header();
             <div class="col-md-6">
                 <ul class="my-5 lista-beneficios">
                     <li>
-                        <div><img src="<?php echo get_template_directory_uri(); ?> /img/icons/farmacia.png" />
+                        <div data-aos="zoom-in"><img src="<?php echo get_template_directory_uri(); ?> /img/icons/farmacia.png" />
                         </div> <span> Farmacias (descuentos de hasta un 95%).</span>
                     </li>
                     <li>
-                        <div><img src="<?php echo get_template_directory_uri(); ?> /img/icons/medico.png" />
+                        <div data-aos="zoom-in"><img src="<?php echo get_template_directory_uri(); ?> /img/icons/medico.png" />
                         </div> <span> Kinesiología (en casa).</span>
                     </li>
                     <li>
-                        <div><img src="<?php echo get_template_directory_uri(); ?> /img/icons/seguro-medico.png" />
+                        <div data-aos="zoom-in"><img src="<?php echo get_template_directory_uri(); ?> /img/icons/seguro-medico.png" />
                         </div> <span> Seguros Escolares.</span>
                     </li>
                     <li>
-                        <div><img src="<?php echo get_template_directory_uri(); ?> /img/icons/cuidado-dental.png" />
+                        <div data-aos="zoom-in"><img src="<?php echo get_template_directory_uri(); ?> /img/icons/cuidado-dental.png" />
                         </div> <span> Seguro dental (hasta un 80% sin tope).</span>
                     </li>
                 </ul>
@@ -131,7 +131,7 @@ get_header();
         </div><!-- end rows -->
 </section>
 
-<section class="centros-medicos">
+<section class="centros-medicos" id="clinicas">
     <div class="container">
         <h2 class="text-center">CLINICAS Y CENTROS MÉDICOS</h2>
         <p class="text-center pt-5">Tener una clínica asociada genera la ventaja de tener un conocimiento de cual es la
@@ -255,6 +255,9 @@ get_header();
     </div>
 
 </section>
+
+
+
 
 
 <?php
